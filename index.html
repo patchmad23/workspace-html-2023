@@ -14,10 +14,14 @@
 	<link rel="stylesheet" href="css/main.css">
 
 	<!--- We will learn later -->
+	<!-- <meta http-equiv="Refresh" content="3;url=https://www.usca.edu/"> -->
 </head>
 
 <body>
-	<div id="side"> </div>
+	<div id="side"> 
+		<iframe src="HTMLelements.html" frameborder="0" height="100%"></iframe>
+
+	</div>
 	<div class="practicearea">
 		<div class="practice">
 			<h2>August 30 practice</h2>
@@ -28,20 +32,238 @@
 
 
 		<div class="practice">
+			<h2>September 6 practice</h2>
+			<h3> h3 heading</h3>
+			<ol>
+				<li> Inline elements
+					<ul>
+						<li> &lt; img &gt; </li>
+						<li> &lt; br &gt; </li>
+						<li> &lt; strong &gt; </li>
+					</ul>
+				</li>
 
+				<li> Block level elements
+					<ul>
+						<li> &lt; ol &gt; </li>
+						<li> &lt; li &gt; </li>
+						<li> &lt; p &gt; </li>
+					</ul> 
+				</li>
+			</ol>
+			<p> This is block level <b> element</b>. del is an inline <del>element</del>
+			</p>
+			<p>How about image? <img src="img/facebook.png" alt="Facebook"></p>
 		</div>
 
 
 		<div class="practice">
+			<h1>september 11 </h1>
+			<p>
+				<a href="https://www.usca.edu"> USCA website</a>
+				<a href="doc/imageMap.html" target="_blank"> Image Map File</a>
 
+			<a href="https://www.mit.edu">
+				<img src="img/plus.png" alt="mit link">
+			</a>
+			<a href="https://www.google.com">
+				<img src="img/google.png" alt="google link">
+			</a>
+			</p>
+			<p>
+				<a href="https://www.usca.edu/myusca"> USCA Blackboard </a>
+			</p>
+			<table border="1">
+				<tr>
+					<td>1</td> <td>2</td> <td>3</td>
+				</tr>
+				<tr>
+					<td>3</td> <td>4</td> <td>5</td>
+				</tr>
+				<tr><td>10</td><td>109</td><td>277</td></tr>
+				<tr><td>10</td><td>109</td><td>277</td></tr>
+				<tr><td>10</td><td>109</td><td>277</td></tr>
+				<tr><td>10</td><td>109</td><td>277</td></tr>
+				<tr><td>10</td><td>109</td><td>277</td></tr>
+			</table>
 
 		</div>
 
 		<div class="practice">
+			<h1>September 12</h1>
+			<table border="1">
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td rowspan="3">109</td>
+					<td>277</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>277</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>277</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>109</td>
+					<td>277</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>109</td>
+					<td>277</td>
+				</tr>
+			</table>
 
+			<h2>Required In Class exercise</h2>
+			<table border="1">
+				<tr>
+					<td colspan="4">Temperature Distribution in Jan-Apr 2015 (F)</td>
+				</tr>
+				<tr>
+					<td>Month</td>
+					<td>High</td>
+					<td>Low</td>
+					<td>Average</td>
+				</tr>
+				<tr>
+					<td>January</td>
+					<td>48</td>
+					<td>36</td>
+					<td>40</td>
+				</tr>
+				<tr>
+					<td>February</td>
+					<td>49</td>
+					<td>37</td>
+					<td rowspan="2">43</td>
+				</tr>
+				<tr>
+					<td>March</td>
+					<td>52</td>
+					<td>39</td>
+					
+				</tr>
+				<tr>
+					<td>April</td>
+					<td>58</td>
+					<td>43</td>
+					<td>47</td>
+				</tr>
+			</table>
+
+			<h2>Form practice</h2>
+			<form action="">
+				<p>
+					Name: <input type="text" name="fullname">
+				</p>
+				<p>
+					Password: <input type="password" name="pwd">
+				</p>
+				<p>
+					Date: <input type="date" name="date">
+				</p>
+				<p>
+					Email: <input type="email" name="email">
+				</p>
+				<p>
+					Color: <input type="color" name="color">
+				</p>
+				<p>what are your favorite colors?
+					<input type="checkbox" name="colors" value="red">red
+					<input type="checkbox" name="colors" value="blue">blue
+					<input type="checkbox" name="colors" value="green">green
+					<input type="checkbox" name="colors" value="yellow">yellow
+				</p>
+				<p>
+					<input type="submit" value="Click to submit">
+				</p>
+			</form>
+
+		</div>
+		<div class="practice">
+			<h1> Sep 18 practice</h1>
+			<h2>Form Practice - more</h2>
+
+			<form action="">
+				<fieldset>
+					<legend>Test the fieldset</legend>
+
+					<p>Please input the genre you prefer:</p>
+					<p><input type="radio" name="genre" value="rock" checked>Rock </p>
+					<p><input type="radio" name="genre" value="pop">Pop </p>
+					<p><input type="radio" name="genre" value="jazz">Jazz </p>
+
+					<p>
+						Please enter your feedback:
+					</p>
+					<p>
+						<textarea name="feedback" id="" cols="30" rows="10">
+							No Comments
+						</textarea>
+					</p>
+					<p> Select your favvorite browser:
+						<select name="browser" size="4" multiple>
+							<option value="firefox">Firefox</option>
+							<option value="chrome">Chrome</option>
+							<option>Safari</option>
+							<option value="ie">Edge</option>
+						</select>
+					</p>
+				</fieldset>
+				<p>
+					image button for fun
+					<input type="image" src="img/subscribe.jpg">
+					<button> <img src="img/add.gif" alt="add"> Add </button>
+
+				</p>
+
+				<p>
+					<input type="submit" value="Click to submit">
+					<input type="reset" value="Clear the form">
+				</p>
+
+				<p>
+					HTML 5 features
+					<input type="color" name="color">
+					<input type="date" name="date">
+					<input type="datetime-local" name="datetime">
+				</p>
+			</form>
 
 		</div>
 
+		<div class="practice">
+			<h1> September 20 -- HTML 5 features</h1>
+			<h2>Form practice</h2>
+			<form action="">
+				<p> Email: <input type="email" placeholder="name@example.com" name="email" required></p>
+				<p> Tel: <input type="tel" placeholder="123-456-7890" pattern="\d{3}-\d{3}-\d{4}" name="tel" required></p>
+				
+				<p> Rating: <input type="number" name="rating" min="1" max="5"></p>
+				<p> Favorite scores: 0<input type="range" name="score" min="0" max="10">10</p>
+				<p><input type="submit" value="submit" formnovalidate></p>
+			</form>
+
+			<p>Video</p>
+			<iframe width="400" height="250" src="https://www.youtube.com/embed/_MMga99JDxI?si=oINbMgXA6Yq3TUZd" title="Youtube player" frameborder="0"></iframe>
+			<p>Google Map</p>
+			<iframe width="600“ height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDxP_piMOZoX9xRNJxRBioVZKfQ--izWrc&q=University+of+South+Carolina,Columbia+SC"> </iframe>
+
+			<p><video src="video/puppy.mp4" poster="img/puppy.jpg" preload controls loop></video> a puppy video</p>
+		</div>
 	</div>
 
 </body>
